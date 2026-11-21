@@ -1,0 +1,7 @@
+.openai/
+.DS_Store
+Thumbs.db
+node_modules/
+artifacts/
+*.zip
+Aditusan-Preview.html

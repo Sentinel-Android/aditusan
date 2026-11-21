@@ -1,0 +1,15 @@
+{
+  "name": "aditusan-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An ink-and-paper project journal for aditusan.dev, deployed with GitHub Actions.",
+  "scripts": {
+    "check": "node scripts/generate-sitemap.mjs && node --check scripts/generate-sitemap.mjs && node scripts/test-sitemap.mjs && node --check dist/main.js && node --check dist/projects.js && node --check dist/appearance.js && node --check dist/seasonal-tree.js && node scripts/verify.mjs && node scripts/test-appearance.mjs",
+    "preview": "node scripts/serve.mjs",
+    "offline": "node scripts/offline.mjs",
+    "sitemap": "node scripts/generate-sitemap.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
